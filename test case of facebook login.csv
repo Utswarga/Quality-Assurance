@@ -1,0 +1,197 @@
+Project name:,Facebook login,,,,,,,,,,
+Module name:,Login,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+Test Scenario ID,Test scenario Description ,Test Case ID,Test Case Description,Pre-condition,Priority,Requrement ID,Test Steps,Test Data,Expected Result,Actual Result,Status
+TS001,To verify login functionality ,TC001,To validate that user is able to login with correct username and password,User is on any browser.       User is in URL:Facebook - log in or sign up,P0,RT001,"1)Enter valid username and password.
+2)Click on login bottom.","Username:utswargakhatri8@gmail.com 
+Password:utswarga123","1)enter data should be displayed.
+2)enter password should be displayed in encrypeted.
+3)user should be able to login and home page should be displayed.","1)enter data is displayed.
+2)password is displayed in encrypeted format.
+3)User is able to login and home page is displayed.",Pass
+,,TC002,To validate that user is not able to login with invalid username and password. ,User is on any browser.       User is in URL:Facebook - log in or sign up,P0,,"1)Enter invalid username and password.
+2)Click on login bottom.","Username:utswargakhatri8gmail.com 
+Password:utswarga123!@#","1)enter data should be displayed.
+2)enter password should be displayed in encrypted.
+3)user should not be able to log in and home page should not be displayed.
+4)Error message should be displayed ""Invalid username or password"".","1)enter data is displayed.
+2)password is displayed in encrypeted format.
+3)User isnot able to login and home page is not displayed.
+4)Error messgae is displayed ""Invalid username or password.",Pass
+,,TC003,To validate that user is not able to login with invalid username and valid password. ,User is on any browser.       User is in URL:Facebook - log in or sign up,P0,,"1)Enter invalid username and valid password.
+2)Click on login bottom.","Username:utswargakhatri8gmail.com 
+Password:utswarga123","1)enter data should be displayed.
+2)enter password should be displayed in encrypted.
+3)user should not be able to log in and home page shouldnot be displayed.
+4)Error message should be displayed ""Invalid username or password"".","1)enter data is displayed.
+2)password is displayed in encrypeted format.
+3)User isnot able to login and home page is not displayed.
+4)Error messgae is displayed ""Invalid username or password.",Pass
+,,TC004,To validate that user cannot log in leaving the username and password field empty.,"User is on any browser.       
+User is in URL:Facebook - log in or sign up",P0,,Click on login bottom.,"Username:
+Password:","1)login bottom should be able to be clicked.
+2)Error message should be displayed ""Invalid username or password""","1)login bottom can be clicked. 
+2)Error message displayed ""Invalid username or password""",Pass
+,,TC005,To validate that user can use phone number as username.,"User is on any browser.       
+User is in URL:Facebook - log in or sign up
+",P0,,"1)Enter valid phone number in username field.
+2)Enter valid password.
+3)Click on log in bottom.
+","Username:9848583327
+Password:utswarga123","1)Enter username should be displayed.
+2)Enter password should be displayed in encrypted format.
+3)User should able to log in and home page should displayed with message ""successfully login"".","1)Entered username is displayed.
+2) Entered password is displayed in encrypted format.
+3)user is able to log in and home page is displayed but message is not displayed  ""successfully login"".",Pass
+,,TC006,To validate that user is able to change password thought forget password.,"User is on any browser.       
+User is in URL:Facebook - log in or sign up
+",P1,,"1)click on forget password.
+2)Enter username or mobile number in the username field.
+3)Click on search bottom.
+4)Click on ""This Is My Account"" bottom.
+5)Click on ""Try another way"" bottom.
+6)Select either ""Send code via Facebook notification""or""Send code via SMS"".
+7)Click on ""Continue"" bottom.
+8)Enter the valid security code.
+9)Click on ""Continue"" bottom.
+10)Enter New password in both password field and confirm password field.
+11)Click Save Changes.
+","Phone number:9848583327
+New Password:ram123
+Confirm password:ram123","1)User should be able to click on forget password.
+2)User should navigate to ""Find your account"" page.
+3)User should be able to enter username or phone number in the username field.
+4)Enter user name or phone number should be displayed.
+5)User should be able to click on search bottom.
+6)User should be able to see all the linked or registered accounts from the entered username or paone number.
+7)User should be able to click on ""This Is My Account"" bottom.
+8)User should be able to click on ""Try another way"" bottom.
+9)User should be able to select either ""Send code via Facebook notification"" or""Send code via SMS"".
+10)User should be able to click on ""continue"" bottom.
+11)User should receive security code.
+12)User should be able to enter security code and it should be displayed.
+13)User should be able to click on ""Continue"" bottom.
+14)User should navigate to create new password page.
+15)User should be able to enter new password in both password and confirm fields.
+16)Enter password should be displayed in encrypted format.
+17)Both New Password and confirm password should match each other.
+18)User should be able to click on save changes bottom.
+19)Message should be displayed as ""Successfully Password change"" and should navigate to login page.
+
+
+","1)User is able to click on forget password.
+2)User is navigated to ""Find your account"" page.
+3)User is able to enter username or phone number in the username field.
+4)Entered user name or phone number is displayed.
+5)User is able to click on search bottom.
+6)User is able to see all the linked or registered accounts from the entered username or phone number.
+7)User is be able to click on ""This Is My Account"" bottom.
+8)User is able to click on ""Try another way"" bottom.
+9)User is able to select either ""Send code via Facebook notification"" or""Send code via SMS"".
+10)User is able to click on ""continue"" bottom.
+11)User received security code.
+12)User is able to enter security code and it should be displayed.
+13)User is able to click on ""Continue"" bottom.
+14)User navigated to create new password page.
+15)User is able to enter new password in both password and confirm fields.
+16)Entered password is displayed in encrypted format.
+17)Both New Password and confirm password matched each other.
+16)User is able to click on save changes bottom.
+17)Message is displayed as ""Successfully Password change"" and user navigates to login page.
+
+
+",Pass
+,,TC007,To validate that user is not able to change the password entering incorrect security code.,"User is on any browser.       
+User is in URL:Facebook - log in or sign up
+click on forget password.",P1,,"1)Enter username or mobile number in the username field.
+2)Click on search bottom.
+3)Click on ""This Is My Account"" bottom.
+4)Click on ""Try another way"" bottom.
+5)Select either ""Send code via Facebook notification"" or""Send code via SMS"".
+6)Click on ""Continue"" bottom.
+7)Enter the invalid security code.
+8)Click on ""Continue"" bottom.
+
+","Phone number:9848583327
+security code:983043","1)User should be able to click on forget password.
+2)User should navigate to ""Find your account"" page.
+3)User should be able to enter username or phone number in the username field.
+4)Enter user name or phone number should be displayed.
+5)User should be able to click on search bottom.
+6)User should be able to see all the linked or registered accounts from the entered username or phone number.
+7)User should be able to click on ""This Is My Account"" bottom.
+8)User should be able to click on ""Try another way"" bottom.
+9)User should be able to select either ""Send code via Facebook notification"" or""Send code via SMS"".
+10)User should be able to click on ""continue"" bottom.
+11)User should receive security code.
+12)User should be able to enter security code and it should be displayed.
+18)Error message should be displayed as""Invalid security code"" and should not be able navigate to new password page.
+
+
+
+","1)User is able to click on forget password.
+2)User is navigated to ""Find your account"" page.
+3)User is able to enter username or phone number in the username field.
+4)Entered user name or phone number is displayed.
+5)User is able to click on search bottom.
+6)User is able to see all the linked or registered accounts from the entered username or phone number.
+7)User is be able to click on ""This Is My Account"" bottom.
+8)User is able to click on ""Try another way"" bottom.
+9)User is able to select either ""Send code via Facebook notification"" or""Send code via SMS"".
+10)User is able to click on ""continue"" bottom.
+11)User received security code.
+12)User is able to enter security code and it should be displayed.
+13)User is able to click on ""Continue"" bottom.
+14)Error Message is displayed as ""Wrong security code"" and user is not navigated to new  password page.
+
+
+
+",Fail
+,,TC008,To validate that user is not able to change the password entering incorrect security code.,"User is on any browser.       
+User is in URL:Facebook - log in or sign up
+click on forget password.",P1,,"1)Enter username or mobile number in the username field.
+2)Click on search bottom.
+3)Click on ""This Is My Account"" bottom.
+4)Click on ""Try another way"" bottom.
+5)Select either ""Send code via Facebook notification"" or""Send code via SMS"".
+6)Click on ""Continue"" bottom.
+7)Enter the invalid security code.
+8)Click on ""Continue"" bottom.
+
+","Phone number:9848583327
+security code:983043","1)User should be able to click on forget password.
+2)User should navigate to ""Find your account"" page.
+3)User should be able to enter username or phone number in the username field.
+4)Enter user name or phone number should be displayed.
+5)User should be able to click on search bottom.
+6)User should be able to see all the linked or registered accounts from the entered username or phone number.
+7)User should be able to click on ""This Is My Account"" bottom.
+8)User should be able to click on ""Try another way"" bottom.
+9)User should be able to select either ""Send code via Facebook notification"" or""Send code via SMS"".
+10)User should be able to click on ""continue"" bottom.
+11)User should receive security code.
+12)User should be able to enter security code and it should be displayed.
+18)Error message should be displayed as""Invalid security code"" and should not be able navigate to new password page.
+
+
+
+","1)User is able to click on forget password.
+2)User is navigated to ""Find your account"" page.
+3)User is able to enter username or phone number in the username field.
+4)Entered user name or phone number is displayed.
+5)User is able to click on search bottom.
+6)User is able to see all the linked or registered accounts from the entered username or phone number.
+7)User is be able to click on ""This Is My Account"" bottom.
+8)User is able to click on ""Try another way"" bottom.
+9)User is able to select either ""Send code via Facebook notification"" or""Send code via SMS"".
+10)User is able to click on ""continue"" bottom.
+11)User received security code.
+12)User is able to enter security code and it should be displayed.
+13)User is able to click on ""Continue"" bottom.
+14)Error Message is displayed as ""Invalid security code"" and user is not navigated to new  password page.
+
+
+
+",Pass
